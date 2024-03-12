@@ -15,10 +15,36 @@ window.onload = function () {
       iconSize: [20, 20],
       className: 'icon'
    });
+   var realstatePopup = '<ul><li>Asset Category: Single Family Residence</li></ul>';
    var realstate = L.marker(
       [-12.07, -77.0],
       {icon: realstateIcon}
-   ).bindPopup();
+   ).bindPopup(realstatePopup);
+
+   var realstateAssets = L.layerGroup();
+   realstateAssets.addLayer(realstate);
+
+   var control = L.control.layers(
+      {
+         'Terrain': tiles
+      },
+      {
+         'Real State Assets': realstateAssets
+      },
+      {
+         'collapsed': false,
+         'hideSingleBase': true,
+      }
+   );
    map.addLayer(tiles);
-   map.addLayer(realstate);
+   map.addControl(control);
+
+   var clickMarker = L.marker();
+   function onMapClick(e) {
+      clickMarker.setLatLng(e.latlng).addTo(map);
+      clickMarker.bindPopup(
+         'Coordinates: ' + e.latlng
+      ).openPopup();
+   }
+   map.on('click', onMapClick)
 };
