@@ -1,0 +1,47 @@
+[
+   {
+      "Group Name": "First",
+      "Group Owner": "First",
+      "Broker": "First",
+      "Active Buyers Proposals": "Yes",
+      "Type": "Top",
+      "Tax ID": 12345678,
+      "Address": "Street 1, District 1, Province 1, State 1",
+      "Last Appraisal Value (US$)": 110000,
+      "Invested Equity (US$)": 55000,
+      "Estimated Annual Rent Range (US$)": "0-50K",
+      "Last Year Annual Rent Range (US$)": "0-50K",
+      "Longitude": -77.03,
+      "Latitude": -12.07
+   },
+   {
+      "Group Name": "Second",
+      "Group Owner": "Second",
+      "Broker": "Second",
+      "Active Buyers Proposals": "Yes",
+      "Type": "Regular",
+      "Tax ID": 12345678,
+      "Address": "Street 1, District 1, Province 1, State 1",
+      "Last Appraisal Value (US$)": 110000,
+      "Invested Equity (US$)": 55000,
+      "Estimated Annual Rent Range (US$)": "50-100K",
+      "Last Year Annual Rent Range (US$)": "50-100K",
+      "Longitude": -77.01,
+      "Latitude": -12.08
+   },
+   {
+      "Group Name": "Second",
+      "Group Owner": "Third",
+      "Broker": "Third",
+      "Active Buyers Proposals": "No",
+      "Type": "Regular",
+      "Tax ID": 12345678,
+      "Address": "Street 1, District 1, Province 1, State 1",
+      "Last Appraisal Value (US$)": 110000,
+      "Invested Equity (US$)": 55000,
+      "Estimated Annual Rent Range (US$)": "100-250K",
+      "Last Year Annual Rent Range (US$)": "100-250K",
+      "Longitude": -77.03,
+      "Latitude": -12.1
+   }
+]

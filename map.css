@@ -16,3 +16,11 @@ body {
    justify-content: center;
    align-items: center;
 }
+
+.fa-user {
+   color: #870000;
+}
+
+.fa-house {
+   color: #004700;
+}
